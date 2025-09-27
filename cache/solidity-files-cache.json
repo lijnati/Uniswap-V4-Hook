@@ -1,0 +1,313 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "C:\\Users\\u\\Documents\\INSA-projects\\Build a Uniswap V4 hook\\contracts\\BaseHook.sol": {
+      "lastModificationDate": 1758995365121,
+      "contentHash": "4116c4e8888b2376a35b1a1d384d217c",
+      "sourceName": "contracts/BaseHook.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IHooks.sol",
+        "./interfaces/PoolKey.sol",
+        "./interfaces/BalanceDelta.sol",
+        "./interfaces/IPoolManager.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.24"
+      ],
+      "artifacts": [
+        "BaseHook"
+      ]
+    },
+    "C:\\Users\\u\\Documents\\INSA-projects\\Build a Uniswap V4 hook\\contracts\\interfaces\\IHooks.sol": {
+      "lastModificationDate": 1758995353250,
+      "contentHash": "567ac168bf191d586b4ee7f4f46230c9",
+      "sourceName": "contracts/interfaces/IHooks.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./PoolKey.sol",
+        "./BalanceDelta.sol",
+        "./IPoolManager.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.24"
+      ],
+      "artifacts": [
+        "IHooks"
+      ]
+    },
+    "C:\\Users\\u\\Documents\\INSA-projects\\Build a Uniswap V4 hook\\contracts\\interfaces\\PoolKey.sol": {
+      "lastModificationDate": 1758995332289,
+      "contentHash": "900437a1dbcbf14beebda1f492769be8",
+      "sourceName": "contracts/interfaces/PoolKey.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IHooks.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.24"
+      ],
+      "artifacts": []
+    },
+    "C:\\Users\\u\\Documents\\INSA-projects\\Build a Uniswap V4 hook\\contracts\\interfaces\\BalanceDelta.sol": {
+      "lastModificationDate": 1758995340836,
+      "contentHash": "621a58bd1c591cd317bd7a2e5bf7d6ca",
+      "sourceName": "contracts/interfaces/BalanceDelta.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.24"
+      ],
+      "artifacts": [
+        "BalanceDeltaLibrary"
+      ]
+    },
+    "C:\\Users\\u\\Documents\\INSA-projects\\Build a Uniswap V4 hook\\contracts\\interfaces\\IPoolManager.sol": {
+      "lastModificationDate": 1758995319697,
+      "contentHash": "6f4426482b68cc1653fb47f335c1b4bd",
+      "sourceName": "contracts/interfaces/IPoolManager.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./PoolKey.sol",
+        "./BalanceDelta.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.24"
+      ],
+      "artifacts": [
+        "IPoolManager"
+      ]
+    },
+    "C:\\Users\\u\\Documents\\INSA-projects\\Build a Uniswap V4 hook\\contracts\\FeeCollectorHook.sol": {
+      "lastModificationDate": 1758997578852,
+      "contentHash": "fcae64f680aca9a148ebcec0176ba96e",
+      "sourceName": "contracts/FeeCollectorHook.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./BaseHook.sol",
+        "./interfaces/PoolKey.sol",
+        "./interfaces/BalanceDelta.sol",
+        "./interfaces/IPoolManager.sol",
+        "@openzeppelin/contracts/access/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.24"
+      ],
+      "artifacts": [
+        "FeeCollectorHook"
+      ]
+    },
+    "C:\\Users\\u\\Documents\\INSA-projects\\Build a Uniswap V4 hook\\node_modules\\@openzeppelin\\contracts\\access\\Ownable.sol": {
+      "lastModificationDate": 1758996915239,
+      "contentHash": "d3c790edc9ccf808a17c5a6cd13614fd",
+      "sourceName": "@openzeppelin/contracts/access/Ownable.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "C:\\Users\\u\\Documents\\INSA-projects\\Build a Uniswap V4 hook\\node_modules\\@openzeppelin\\contracts\\utils\\Context.sol": {
+      "lastModificationDate": 1758996914108,
+      "contentHash": "67bfbc07588eb8683b3fd8f6f909563e",
+      "sourceName": "@openzeppelin/contracts/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    }
+  }
+}

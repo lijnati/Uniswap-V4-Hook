@@ -23,21 +23,21 @@ contract FeeCollectorHook is BaseHook, Ownable {
 
     function beforeSwap(
         address,
-        PoolKey calldata key,
-        IPoolManager.SwapParams calldata params,
+        // PoolKey calldata key,
+        // IPoolManager.SwapParams calldata params,
         bytes calldata
-    ) external override pure returns (bytes4) {
+    ) external pure returns (bytes4) {
         // Log the swap attempt
-        return this.beforeSwap.selector;
+    return FeeCollectorHook.beforeSwap.selector;
     }
 
     function afterSwap(
         address,
         PoolKey calldata key,
-        IPoolManager.SwapParams calldata params,
+        // IPoolManager.SwapParams calldata params,
         BalanceDelta delta,
         bytes calldata
-    ) external override returns (bytes4) {
+    ) external  returns (bytes4) {
         // Calculate fee based on the swap amount
         int128 amount0 = delta.amount0();
         int128 amount1 = delta.amount1();
@@ -54,7 +54,7 @@ contract FeeCollectorHook is BaseHook, Ownable {
             emit FeeCollected(key.currency1, fee);
         }
         
-        return this.afterSwap.selector;
+        return FeeCollectorHook.afterSwap.selector;
     }
 
     function setFeeRate(uint256 _feeRate) external onlyOwner {
