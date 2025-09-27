@@ -23,12 +23,11 @@ contract FeeCollectorHook is BaseHook, Ownable {
 
     function beforeSwap(
         address,
-        // PoolKey calldata key,
-        // IPoolManager.SwapParams calldata params,
+        PoolKey calldata,
+        IPoolManager.SwapParams calldata,
         bytes calldata
-    ) external pure returns (bytes4) {
-        // Log the swap attempt
-    return FeeCollectorHook.beforeSwap.selector;
+    ) external override pure returns (bytes4) {
+        return FeeCollectorHook.beforeSwap.selector;
     }
 
     function afterSwap(

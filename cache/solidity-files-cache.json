@@ -194,8 +194,8 @@
       ]
     },
     "C:\\Users\\u\\Documents\\INSA-projects\\Build a Uniswap V4 hook\\contracts\\FeeCollectorHook.sol": {
-      "lastModificationDate": 1758997578852,
-      "contentHash": "fcae64f680aca9a148ebcec0176ba96e",
+      "lastModificationDate": 1758998031976,
+      "contentHash": "4f35dee4c507b1aa8f6b26f88c82e5a5",
       "sourceName": "contracts/FeeCollectorHook.sol",
       "solcConfig": {
         "version": "0.8.24",
