@@ -1,12 +1,11 @@
 const { ethers } = require("hardhat");
 
 async function main() {
-  const address = "DEPLOYED_CONTRACT_ADDRESS";
+  const address = "0xFbBa9C9956F14cc81C7B790106073f699E726102";
   const FeeCollectorHook = await ethers.getContractFactory("FeeCollectorHook");
   const contract = await FeeCollectorHook.attach(address);
 
   console.log("Fee rate:", await contract.feeRate());
-  // Add more interactions as needed
 }
 
 main();
